@@ -14,3 +14,7 @@ Socks
 45
 0.30
 South
+T-shirt2
+270
+1.95
+South
