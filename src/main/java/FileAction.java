@@ -1,4 +1,5 @@
 import java.io.*;
+import java.math.BigDecimal;
 import java.util.*;
 
 public class FileAction {
@@ -9,7 +10,7 @@ public class FileAction {
             while (fileReader.ready()) {
                 String name = fileReader.readLine();
                 double weight = Double.parseDouble(fileReader.readLine());
-                double cost = Double.parseDouble(fileReader.readLine());
+                BigDecimal cost = new BigDecimal(fileReader.readLine());
                 String storeName = fileReader.readLine();
                  if (stores.containsKey(storeName)) {
                      stores.get(storeName).addProduct(new Product(name, weight, cost));

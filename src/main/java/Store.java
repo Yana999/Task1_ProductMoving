@@ -10,11 +10,15 @@ public class Store {
     }
 
     public void addProduct(Product product){
-        products.put(product.getName(), product);
+        products.putIfAbsent(product.getName(), product);
     }
 
     public String getName() {
         return name;
+    }
+
+    public HashMap<String, Product> getProducts() {
+        return new HashMap<>(products);
     }
 
     @Override
