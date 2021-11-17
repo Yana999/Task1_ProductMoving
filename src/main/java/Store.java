@@ -1,3 +1,4 @@
+import java.math.BigDecimal;
 import java.util.*;
 
 public class Store {
@@ -11,6 +12,18 @@ public class Store {
 
     public void addProduct(Product product){
         products.putIfAbsent(product.getName(), product);
+    }
+
+    public BigDecimal avgCost(){
+        BigDecimal allCost= new BigDecimal(0);
+        products.entrySet().forEach(x->allCost.add(x.getValue().getCost()));
+        return allCost.divide(new BigDecimal(products.size()));
+    }
+
+    public String info(){
+        StringBuilder info = new StringBuilder();
+        info.append(String.format("%s средняя цена: %.2f", name, avgCost()));
+        return info.toString();
     }
 
     public String getName() {
