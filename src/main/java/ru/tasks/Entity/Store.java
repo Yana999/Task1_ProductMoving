@@ -1,4 +1,7 @@
+package ru.tasks.Entity;
+
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 
 public class Store {
@@ -16,13 +19,16 @@ public class Store {
 
     public BigDecimal avgCost(){
         BigDecimal allCost= new BigDecimal(0);
-        products.entrySet().forEach(x->allCost.add(x.getValue().getCost()));
-        return allCost.divide(new BigDecimal(products.size()));
+        for(Map.Entry<String, Product> item: products.entrySet()){
+            allCost = allCost.add(item.getValue().getCost());
+        }
+        return allCost.divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
     }
 
     public String info(){
         StringBuilder info = new StringBuilder();
-        info.append(String.format("%s средняя цена: %.2f", name, avgCost()));
+        info.append(String.format("%s average cost: %,7.2f:%n", name, avgCost().setScale(2, RoundingMode.HALF_UP).doubleValue()));
+        products.forEach((k,v) -> info.append(v.toString()));
         return info.toString();
     }
 
@@ -36,7 +42,7 @@ public class Store {
 
     @Override
     public String toString() {
-        return "Store{" + "name='" + name + '\'' + ", products=" + products + '}';
+        return '{' + "name='" + name + '\'' + ", products=" + products + '}';
     }
 
     @Override

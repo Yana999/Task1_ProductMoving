@@ -1,3 +1,7 @@
+import ru.tasks.Entity.Store;
+import ru.tasks.FileActrion.txtProductFileLoader;
+
+import java.math.BigDecimal;
 import java.util.*;
 
 public class ProductMoving {
@@ -6,7 +10,6 @@ public class ProductMoving {
         Scanner consoleScanner = new Scanner(System.in);
         String txtFilePath = consoleScanner.nextLine();
         Map<String, Store> productList = txtProductFileLoader.readProductList(txtFilePath);
-        System.out.println(productList.toString());
-
+        productList.forEach((k, v) -> System.out.println(v.info()));
     }
 }

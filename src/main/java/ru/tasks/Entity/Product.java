@@ -1,3 +1,5 @@
+package ru.tasks.Entity;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -26,7 +28,7 @@ public final class Product {
 
     @Override
     public String toString() {
-        return name + " " + weight + " " + cost;
+        return String.format("%1$15s %2$,10.3f %3$,7.2f%n", name, weight, cost);
     }
 
     @Override
