@@ -8,7 +8,16 @@ public final class Product {
     private final double weight;
     private final BigDecimal cost;
 
-    public Product(String name, double weight, BigDecimal cost) {
+    public Product(String name, double weight, BigDecimal cost) throws IllegalArgumentException{
+        if(cost.compareTo(new BigDecimal(0)) < 0 || cost.ulp().equals(new BigDecimal(0.01))) {
+            throw new IllegalArgumentException(String.format("The illegal value of cost %f, the price cannot be negative", cost));
+        }
+        if(name.contains("\\W")){
+            throw new IllegalArgumentException(String.format("The illegal value of name %s, it is contains a specific symbols", name));
+        }
+        if (weight < 0){
+            throw new IllegalArgumentException(String.format("The illegal value of weight %f, the weight cannot be negative", weight));
+        }
         this.name = name;
         this.weight = weight;
         this.cost = cost;

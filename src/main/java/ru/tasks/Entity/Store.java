@@ -8,7 +8,10 @@ public class Store {
     private String name;
     private HashMap <String, Product> products;
 
-    public Store(String name) {
+    public Store(String name) throws IllegalArgumentException{
+        if(name.matches("\\[a-zA-Z0-9]+")){
+            throw new IllegalArgumentException(String.format("The illegal value of name %s, it is contains a specific symbols", name));
+        }
         this.name = name;
         this.products = new HashMap<>();
     }
