@@ -61,6 +61,10 @@ public class ProductMoving {
                 this.data = data;
                 this.children = new LinkedList<>();
             }
+
+            public void addChild(Node node){
+                children.add(node);
+            }
         }
         private Node root;
 
@@ -70,7 +74,6 @@ public class ProductMoving {
 
         public void add(Product product){
             Node child = new Node(product);
-
         }
     }
 }
