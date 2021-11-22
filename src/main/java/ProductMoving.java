@@ -1,24 +1,43 @@
-import ru.tasks.Entity.Store;
-import ru.tasks.FileActrion.txtProductFileLoader;
+import ru.tasks.entity.Store;
+import ru.tasks.productLoader.ProductFileLoader;
+import ru.tasks.productLoader.TxtProductFileLoader;
+import ru.tasks.service.Move;
 
-import java.math.BigDecimal;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class ProductMoving {
+
+
+
+
     public static void main(String[] args) {
-        txtProductFileLoader txtProductFileLoader = new txtProductFileLoader();
-        Scanner consoleScanner = new Scanner(System.in);
-        String txtFilePath = consoleScanner.nextLine();
-        Map<String, Store> productList = txtProductFileLoader.readProductList(txtFilePath);
+        ProductFileLoader txtProductFileLoader = new TxtProductFileLoader();
+        try{
+        Map<String, Store> productList = txtProductFileLoader.readProductList(args[0]);
         productList.forEach((k, v) -> System.out.println(v.info()));
-        System.out.println((double)(12 + 54 + 2 + 16 + 22 + 24) / 6);
+        Move movement = new Move();
+            for (Store store : productList.values()) {
+                for(Store store2 : productList.values()){
+                    System.out.println(movement.findAllCombinations(store,store2));
+                }
+            }
+
+        }catch (RuntimeException e){
+            System.out.println(e.getMessage());
+            System.exit(1);
+        }
+
+
+
+       /* System.out.println((double)(12 + 54 + 2 + 16 + 22 + 24) / 6);
         System.out.println((double)(54 + 23 + 11 + 22) / 4);
         System.out.println();
         System.out.println((double)(12 + 54 + 2 + 16 + 22) / 5);
         System.out.println((double)(54 + 23 + 11 + 22 + 24) / 5);
         System.out.println();
         System.out.println((double)(12 + 54 + 2 + 16) / 4);
-        System.out.println((double)(54 + 23 + 11 + 22 + 24 + 22) / 6);
+        System.out.println((double)(54 + 23 + 11 + 22 + 24 + 22) / 6);*/
 
 
 

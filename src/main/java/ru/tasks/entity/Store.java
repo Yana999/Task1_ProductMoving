@@ -1,12 +1,12 @@
-package ru.tasks.Entity;
+package ru.tasks.entity;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
 
 public class Store {
-    private String name;
-    private HashMap <String, Product> products;
+    private final String name;
+    private final HashMap <String, Product> products;
 
     public Store(String name) throws IllegalArgumentException{
         if(name.matches("[a-zA-Z0-9]+")){
@@ -17,21 +17,16 @@ public class Store {
         this.products = new HashMap<>();
     }
 
-    public Store(String name, HashMap<String, Product> products) {
-        this.name = name;
-        this.products = products;
-    }
-
-    public void addProduct(Product product){
-        products.putIfAbsent(product.getName(), product);
+    public Product addProduct(Product product){
+        return  products.putIfAbsent(product.getName(), product);
     }
 
     public BigDecimal avgCost(){
         BigDecimal allCost= new BigDecimal(0);
-        for(Map.Entry<String, Product> item: products.entrySet()){
-            allCost = allCost.add(item.getValue().getCost());
+        for(Product product : products.values()){
+            allCost = allCost.add(product.getCost());
         }
-        return allCost.divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
+        return allCost.equals(BigDecimal.ZERO) ? BigDecimal.ZERO : allCost.divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
     }
 
     public String info(){

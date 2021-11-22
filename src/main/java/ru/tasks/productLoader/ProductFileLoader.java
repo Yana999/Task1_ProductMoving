@@ -1,7 +1,7 @@
-package ru.tasks.FileActrion;
+package ru.tasks.productLoader;
 
 import java.util.Map;
-import ru.tasks.Entity.Store;
+import ru.tasks.entity.Store;
 
 public interface ProductFileLoader {
     Map<String, Store> readProductList(String path);
