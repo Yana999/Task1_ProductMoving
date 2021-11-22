@@ -7,7 +7,8 @@ T-shirt2;270;10.95;South
 Water;5,78;6.89123;North
 Juice;9.78;6.89123;North
 BottleWater;5.7895;6.89;North
-Bread34&*(;-5.87; 8; West
+Bread34&*(;5.87; 8; West
+Bread;-5.87; 8; West
 Milk; 1; -8.34;West
 Tea; 1.07;4.44;West
 BlackTea;1.07; 4.44;768%4#West*

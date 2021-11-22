@@ -32,22 +32,22 @@ public class ProductMoving {
             store1 = store2;
             store2 = tempStore;
         }
-        Stack<Store> items = new Stack<>();
+        Stack<Product> stack = new Stack<>();
         List<Product> productToMove = findListToMove(store1, store2);
-        items.add(store1);
-        //productToMove.forEach(x -> items.add(x));
+        productToMove.forEach(x -> stack.push(x));
         StringBuilder combinations = new StringBuilder("from " + store1.getName() + " move products to " + store1.getName() + ":%n");
         combinations.append(String.format("previous average cost of the %1$s is %2$.2f and average cost of the %3$s is %4$7.2f", store1.getName(), store1.avgCost(), store2.getName(), store2.avgCost()));
          int index = 0;
-         while (!items.isEmpty()){
-             while (!productToMove.isEmpty()){
-                 Store tempStore1 = new Store(store1.getName(), store1.getProducts());
-                 tempStore1.addProduct(productToMove.get(0));
-                 items.add(tempStore1);
-                 combinations.append(String.format("%1$d. %2$s average cost after moving is %3$.2f", index, productToMove.get(0).getName(), tempStore1.avgCost()));
-                 productToMove = findListToMove(tempStore1, store2);
-             }
-
+         store1.addProduct(stack.peek());
+         while (!stack.isEmpty()) {
+            List<Product> nextProducts = findListToMove(store1, store2);
+            while (!nextProducts.isEmpty()) {
+                nextProducts.forEach(x -> stack.push(x));
+                store1.addProduct(stack.peek());
+                nextProducts = findListToMove(store1, store2);
+                //combinations.append(String.format("%1$d. %2$s average cost after moving is %3$.2f", index, productToMove.get(0).getName(), tempStore1.avgCost()));
+            }
+            stack.pop();
          }
     }
 
