@@ -35,7 +35,7 @@ public class txtProductFileLoader implements ProductFileLoader {
                     }catch (NumberFormatException e) {
                         System.out.printf("File %s contains a number %s in a wrong format in line number %d%n", path, e.getMessage().substring(e.getMessage().indexOf("\""), e.getMessage().lastIndexOf("\"")), lineNumber);
                     }catch (IllegalArgumentException e) {
-                        System.out.println(e.getMessage());
+                        System.out.println(e.getMessage() + " in line " + lineNumber);
                     }
                 }
             }

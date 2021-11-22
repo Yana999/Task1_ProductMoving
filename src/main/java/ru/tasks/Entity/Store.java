@@ -9,11 +9,17 @@ public class Store {
     private HashMap <String, Product> products;
 
     public Store(String name) throws IllegalArgumentException{
-        if(name.matches("\\[a-zA-Z0-9]+")){
-            throw new IllegalArgumentException(String.format("The illegal value of name %s, it is contains a specific symbols", name));
+        if(name.matches("[a-zA-Z0-9]+")){
+            this.name = name;
+        }else{
+            throw new IllegalArgumentException(String.format("The illegal value of store's name %s, it is contains a specific symbols", name));
         }
-        this.name = name;
         this.products = new HashMap<>();
+    }
+
+    public Store(String name, HashMap<String, Product> products) {
+        this.name = name;
+        this.products = products;
     }
 
     public void addProduct(Product product){

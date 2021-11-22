@@ -11,5 +11,10 @@ public class ProductMoving {
         String txtFilePath = consoleScanner.nextLine();
         Map<String, Store> productList = txtProductFileLoader.readProductList(txtFilePath);
         productList.forEach((k, v) -> System.out.println(v.info()));
+
+
+
+
+
     }
 }
