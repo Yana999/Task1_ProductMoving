@@ -1,10 +1,9 @@
-package ru.tasks.productLoader;
+package ru.tasks.fileLoader;
 
 import ru.tasks.entity.Product;
 import ru.tasks.entity.Store;
 
 import java.io.*;
-import java.math.BigDecimal;
 import java.util.*;
 
 public class TxtProductFileLoader implements ProductFileLoader {
@@ -20,9 +19,10 @@ public class TxtProductFileLoader implements ProductFileLoader {
                 if(!line.isEmpty()){
                     try {
                         String[] splitLine = line.split(";");
-                        stores.putIfAbsent(splitLine[3], new Store(splitLine[3]));
+                        String storeName = splitLine[3].trim();
+                        stores.putIfAbsent(storeName, Store.parseStore(storeName));
                         Product newProduct = Product.parseProduct(splitLine[0], splitLine[1], splitLine[2]);
-                        Product duplicate = stores.get(splitLine[3]).addProduct(newProduct);
+                        Product duplicate = stores.get(storeName).addProduct(newProduct);
                         if (duplicate != null) {
                             System.out.printf("Found the duplicate %1$s of product %2$s in line %3$d. Duplicate was not saved %n", newProduct, duplicate, lineNumber);
                         }
@@ -34,8 +34,8 @@ public class TxtProductFileLoader implements ProductFileLoader {
                 }
             }
         }catch (FileNotFoundException e) {
-            System.out.printf("File %s not found", path);
-            //throw new RuntimeException("Cannot continue, file with products was not found");
+            System.out.printf("File %s not found %n", path);
+            throw new RuntimeException("Cannot continue, file with products was not found");
         }catch (IOException e){
             System.out.println("Something went wrong");
         }

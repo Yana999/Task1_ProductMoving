@@ -18,6 +18,9 @@ public final class Product {
         name = name.trim();
         weight = weight.trim();
         cost = cost.trim();
+        BigDecimal convertedCost;
+        double convertedWeight;
+
 
         if(!name.matches("[a-zA-Z0-9-]+")){
             throw new IllegalArgumentException(String.format("Inappropriate value of product's name %s, it is contains a specific symbols", name));
@@ -25,19 +28,29 @@ public final class Product {
 
         if (weight.contains(",")) {
             weight = weight.replace(",", ".");
-            if(weight.matches("\\D") || !weight.matches("\\d+.\\d{1,3}")){
-                throw new IllegalArgumentException(String.format("Inappropriate value of the weight %s", weight));
-            }
+        }
+        if(weight.matches("\\D") || (weight.contains(".") && !weight.matches("\\d+.\\d{1,3}"))){
+            throw new IllegalArgumentException(String.format("Inappropriate value of the weight %s", weight));
         }
 
-        if(cost.contains(",")){
+        convertedWeight = Double.parseDouble(weight);
+        if(convertedWeight < 0) {
+            throw new IllegalArgumentException(String.format("Inappropriate value of the weight %s", weight));
+        }
+
+        if(cost.contains(",")) {
             cost = cost.replace(",", ".");
-            if (cost.matches("\\D")|| (cost.contains(".") && !cost.matches("\\d+.\\d{1,2}"))) {
-                throw new IllegalArgumentException(String.format("Inappropriate value of the cost %s", cost));
-            }
+        }
+        if (cost.matches("\\D")|| (cost.contains(".") && !cost.matches("\\d+.\\d{1,2}"))) {
+            throw new IllegalArgumentException(String.format("Inappropriate value of the cost %s", cost));
         }
 
-        return new Product(name, Double.parseDouble(weight), new BigDecimal(cost));
+        convertedCost = new BigDecimal(cost);
+        if(convertedCost.compareTo(BigDecimal.ZERO) < 0) {
+            throw new IllegalArgumentException(String.format("Inappropriate value of the cost %s", cost));
+        }
+
+        return new Product(name, convertedWeight, convertedCost);
     }
 
     public String getName() {
@@ -54,7 +67,7 @@ public final class Product {
 
     @Override
     public String toString(){
-        return String.format("%1$s %2$,.3f %3$,.2f%n", name, weight, cost);
+        return String.format("%1$s %2$,.3f %3$,.2f", name, weight, cost);
     }
 
     public String formatString() {

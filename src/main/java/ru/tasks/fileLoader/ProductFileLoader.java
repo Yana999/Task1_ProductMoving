@@ -1,4 +1,4 @@
-package ru.tasks.productLoader;
+package ru.tasks.fileLoader;
 
 import java.util.Map;
 import ru.tasks.entity.Store;
