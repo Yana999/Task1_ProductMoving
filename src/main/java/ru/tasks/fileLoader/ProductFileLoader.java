@@ -1,8 +1,11 @@
 package ru.tasks.fileLoader;
 
-import java.util.Map;
 import ru.tasks.entity.Store;
 
+import java.util.Map;
+import java.util.Optional;
+
+
 public interface ProductFileLoader {
-    Map<String, Store> readProductList(String path);
+    Optional<Map<String, Store>> readProductList(String path);
 }

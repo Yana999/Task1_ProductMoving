@@ -1,5 +1,7 @@
 package ru.tasks.entity;
 
+import ru.tasks.exseption.InputValueException;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
@@ -14,42 +16,33 @@ public final class Product {
         this.cost = cost;
     }
 
-    public static Product parseProduct(String name, String weight, String cost) throws IllegalArgumentException{
+    public static Product parseProduct(String name, String weight, String cost) throws InputValueException {
         name = name.trim();
         weight = weight.trim();
         cost = cost.trim();
         BigDecimal convertedCost;
         double convertedWeight;
 
-
         if(!name.matches("[a-zA-Z0-9-]+")){
-            throw new IllegalArgumentException(String.format("Inappropriate value of product's name %s, it is contains a specific symbols", name));
+            throw new InputValueException("product's name", name);
         }
 
         if (weight.contains(",")) {
             weight = weight.replace(",", ".");
         }
-        if(weight.matches("\\D") || (weight.contains(".") && !weight.matches("\\d+.\\d{1,3}"))){
-            throw new IllegalArgumentException(String.format("Inappropriate value of the weight %s", weight));
-        }
 
         convertedWeight = Double.parseDouble(weight);
-        if(convertedWeight < 0) {
-            throw new IllegalArgumentException(String.format("Inappropriate value of the weight %s", weight));
+        if(convertedWeight < 0 || ((convertedWeight * 1000 % 1 > 0))) {
+            throw new InputValueException("weight", weight);
         }
 
         if(cost.contains(",")) {
             cost = cost.replace(",", ".");
         }
-        if (cost.matches("\\D")|| (cost.contains(".") && !cost.matches("\\d+.\\d{1,2}"))) {
-            throw new IllegalArgumentException(String.format("Inappropriate value of the cost %s", cost));
-        }
-
         convertedCost = new BigDecimal(cost);
-        if(convertedCost.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException(String.format("Inappropriate value of the cost %s", cost));
+        if(convertedCost.compareTo(BigDecimal.ZERO) < 0 || convertedCost.ulp().compareTo(new BigDecimal("0.01")) < 0) {
+            throw new InputValueException( "cost", cost);
         }
-
         return new Product(name, convertedWeight, convertedCost);
     }
 
@@ -67,7 +60,7 @@ public final class Product {
 
     @Override
     public String toString(){
-        return String.format("%1$s %2$,.3f %3$,.2f", name, weight, cost);
+        return String.format("%1$s  %2$,.3f  %3$,.2f", name, weight, cost);
     }
 
     public String formatString() {

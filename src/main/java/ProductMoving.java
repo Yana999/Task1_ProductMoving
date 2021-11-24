@@ -1,29 +1,25 @@
 import ru.tasks.entity.Store;
 import ru.tasks.fileLoader.ProductFileLoader;
 import ru.tasks.fileLoader.TxtProductFileLoader;
-import ru.tasks.fileSaver.MovementsFileSaver;
-import ru.tasks.fileSaver.TxtMovementsFileSaver;
-import ru.tasks.service.Move;
-
+import ru.tasks.fileSaver.FileSaver;
+import ru.tasks.service.FindProductTransfer;
 import java.util.*;
 
 public class ProductMoving {
 
-
-
-
     public static void main(String[] args) {
-        ProductFileLoader txtProductFileLoader = new TxtProductFileLoader();
-        try{
-            Map<String, Store> storeList = txtProductFileLoader.readProductList(args[0]);
-            storeList.forEach((k, v) -> System.out.println(v.info()));
-            Move movement = new Move();
-            System.out.println(movement.findAllCombinations(storeList));
-            MovementsFileSaver txtMovementsFileSaver = new TxtMovementsFileSaver();
-            txtMovementsFileSaver.saveMovements(movement.findAllCombinations(storeList), args[1], false, false);
-        }catch (RuntimeException e){
-            System.out.println(e.getMessage());
-            System.exit(1);
+        if(args.length == 2) {
+            ProductFileLoader txtProductFileLoader = new TxtProductFileLoader();
+            Optional<Map<String, Store>> stores = txtProductFileLoader.readProductList(args[0]);
+            if(stores.isPresent()) {
+                stores.get().values().forEach(v -> System.out.println(v.info()));
+                FindProductTransfer movement = new FindProductTransfer();
+                movement.findAndSaveAllTransfers(new ArrayList<>(stores.get().values()));
+                FileSaver fileSaver = new FileSaver();
+                fileSaver.saveTransfer(args[1], false, false);
+            }
+        }else {
+            System.out.println("Please, check input and output paths");
         }
     }
 }

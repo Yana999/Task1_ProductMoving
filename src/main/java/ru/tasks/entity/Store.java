@@ -1,5 +1,7 @@
 package ru.tasks.entity;
 
+import ru.tasks.exseption.InputValueException;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
@@ -13,10 +15,10 @@ public class Store {
         this.products = new HashMap<>();
     }
 
-    public static Store parseStore(String store){
+    public static Store parseStore(String store) throws InputValueException {
         store = store.trim();
         if(!store.matches("[a-zA-Z0-9]+")){
-            throw new IllegalArgumentException(String.format("The illegal value of store's name %s, it is contains a specific symbols", store));
+            throw new InputValueException("store's name", store);
         }else{
             return new Store(store);
         }
@@ -36,6 +38,22 @@ public class Store {
 
     public BigDecimal avgCost(){
         return products.size() == 0 ? BigDecimal.ZERO : sumCost().divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal avgCostWith(List<Product> withProducts){
+        BigDecimal newSum = sumCost();
+        for(Product product : withProducts){
+            newSum = newSum.add(product.getCost());
+        }
+        return newSum.divide(new BigDecimal(products.size() + withProducts.size()), 2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal avgCostWithout(List<Product> withoutProducts){
+        BigDecimal newSum = sumCost();
+        for(Product product : withoutProducts){
+            newSum = newSum.subtract(product.getCost());
+        }
+        return newSum.divide(new BigDecimal(products.size() - withoutProducts.size()), 2, RoundingMode.HALF_UP);
     }
 
     public String info(){
