@@ -1,0 +1,6 @@
+From       previousCost      NowCost To         previousCost      NowCost ProductsToMove 
+A                 21.67        21.60 B                 27.50        26.40 Bread 5,870 22,00
+A                 21.67        21.20 B                 27.50        26.80 Milk 1,000 24,00
+A                 21.67        21.00 B                 27.50        26.00 Milk 1,000 24,00Bread 5,870 22,00
+South              4.18         0.80 A                 21.67        20.14 T-shirt2 270,000 10,95
+South              4.18         0.80 B                 27.50        24.19 T-shirt2 270,000 10,95
