@@ -51,14 +51,14 @@ public class FindProductTransfer {
     }
 
     private void recursionCombination(int count, List<Product> visited, Store store1, Store store2, FileWriter writer) throws IOException {
-        List<Product> set  = findListToMove(store1, store2, visited);
-        for (int i = 0; i < set.size(); i++) {
-            if (visited.contains(set.get(i))) break;
+        List<Product> toTransfer  = findListToMove(store1, store2, visited);
+        for (int i = 0; i < toTransfer.size(); i++) {
+            if (visited.contains(toTransfer.get(i))) break;
             List<Product> visited1 = new ArrayList<>(visited);
-            visited1.add(set.get(i));
+            visited1.add(toTransfer.get(i));
             String s = formatTransfer(store1, store2, visited1);
             writer.write(s);
-            if (count < set.size() - 1) {
+            if (count < toTransfer.size() - 1) {
                 recursionCombination(count+1, visited1, store1, store2, writer);
             }
         }
