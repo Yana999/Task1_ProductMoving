@@ -4,6 +4,7 @@ package ru.tasks.service;
 import ru.tasks.entity.Product;
 import ru.tasks.entity.Store;
 
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -26,7 +27,7 @@ public class FindProductTransfer {
     }
 
     public void findAndSaveAllTransfers(List<Store> stores, String path, boolean append) {
-        try (FileWriter writer = new FileWriter(path, append)){
+        try (FileWriter writer = new FileWriter(path, append)) {
             for (Store store1 : stores) {
                 for (Store store2 : stores) {
                     if (!store1.equals(store2)) {
@@ -34,6 +35,8 @@ public class FindProductTransfer {
                     }
                 }
             }
+        }catch (FileNotFoundException e){
+            System.out.println("File " + path + " not found");
         }catch(IOException e) {
             System.out.println("Cannot continue write to file! Something went wrong");
         }
