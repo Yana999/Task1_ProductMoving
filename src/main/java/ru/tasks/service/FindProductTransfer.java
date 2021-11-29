@@ -20,14 +20,13 @@ public class FindProductTransfer {
         BigDecimal lowerLimit = store1.avgCostWithout(alreadyMoved);
         BigDecimal upperLimit = store2.avgCostWith(alreadyMoved);
         return store1.getProducts().values().stream()
-                .filter(x -> (x.getCost().compareTo(lowerLimit) > 0))
-                .filter(x -> (x.getCost().compareTo(upperLimit) < 0))
+                .filter(x -> (x.getCost().compareTo(lowerLimit) >= 0))
+                .filter(x -> (x.getCost().compareTo(upperLimit) <= 0))
                 .collect(Collectors.toList());
     }
 
     public void findAndSaveAllTransfers(List<Store> stores, String path, boolean append) {
-        try (FileWriter writer = new FileWriter(path)){
-            // попробовать дергать через приватныю переменную в фромате
+        try (FileWriter writer = new FileWriter(path, append)){
             for (Store store1 : stores) {
                 for (Store store2 : stores) {
                     if (!store1.equals(store2)) {
@@ -35,8 +34,8 @@ public class FindProductTransfer {
                     }
                 }
             }
-        }catch(Exception e) {
-            System.out.println("Cannot write to file! Something went wrong");
+        }catch(IOException e) {
+            System.out.println("Cannot continue write to file! Something went wrong");
         }
     }
 
@@ -54,7 +53,8 @@ public class FindProductTransfer {
             if (visited.contains(set.get(i))) break;
             List<Product> visited1 = new ArrayList<>(visited);
             visited1.add(set.get(i));
-            writer.write(formatTransfer(store1, store2, visited1));
+            String s = formatTransfer(store1, store2, visited1);
+            writer.write(s);
             if (count < set.size() - 1) {
                 recursionCombination(count+1, visited1, store1, store2, writer);
             }

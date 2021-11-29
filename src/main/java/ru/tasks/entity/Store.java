@@ -12,7 +12,7 @@ public class Store {
 
     public Store(String name) throws IllegalArgumentException{
         this.name = name;
-        this.products = new HashMap<>();
+        this.products = new LinkedHashMap<>();
     }
 
     public static Store parseStore(String store) throws InputValueException {
@@ -45,7 +45,8 @@ public class Store {
         for(Product product : withProducts){
             newSum = newSum.add(product.getCost());
         }
-        return newSum.divide(new BigDecimal(products.size() + withProducts.size()), 2, RoundingMode.HALF_UP);
+        BigDecimal newSize = new BigDecimal(products.size() + withProducts.size());
+        return newSize.equals(BigDecimal.ZERO) ? BigDecimal.ZERO : newSum.divide(newSize, 2, RoundingMode.HALF_UP);
     }
 
     public BigDecimal avgCostWithout(List<Product> withoutProducts){
@@ -53,7 +54,8 @@ public class Store {
         for(Product product : withoutProducts){
             newSum = newSum.subtract(product.getCost());
         }
-        return newSum.divide(new BigDecimal(products.size() - withoutProducts.size()), 2, RoundingMode.HALF_UP);
+        BigDecimal newSize = new BigDecimal(products.size() - withoutProducts.size());
+        return newSize.equals(BigDecimal.ZERO) ? BigDecimal.ZERO : newSum.divide(newSize, 2, RoundingMode.HALF_UP);
     }
 
     public String info(){
