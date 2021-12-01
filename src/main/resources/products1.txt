@@ -7,8 +7,9 @@ Product7;1;60;Store1
 Product8;1;70;Store1
 Product9;1;80;Store1
 Product10;1;90;Store1
-Product11;1;130;Store2
-Product12;1;30;Store3
-Product13;1;120;Store2
-Product14;1;40;Store2
+Product11;1;100;Store1
+Product12;1;130;Store2
+Product13;1;30;Store3
+Product14;1;120;Store2
+Product15;1;40;Store2
 

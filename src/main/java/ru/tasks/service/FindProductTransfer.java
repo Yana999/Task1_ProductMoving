@@ -8,31 +8,18 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class FindProductTransfer {
 
-
-    private List<Product> findListToMove(Store store1, Store store2, List<Product> alreadyMoved){
-        if(store1.getProducts().size() == alreadyMoved.size()) {
-            return new LinkedList<>();
-        }
-        BigDecimal lowerLimit = store1.avgCostWithout(alreadyMoved);
-        BigDecimal upperLimit = store2.avgCostWith(alreadyMoved);
-        return store1.getProducts().values().stream()
-                .filter(x -> (x.getCost().compareTo(lowerLimit) >= 0))
-                .filter(x -> (x.getCost().compareTo(upperLimit) <= 0))
-                .collect(Collectors.toList());
-    }
-
-    public void findAndSaveAllTransfers(List<Store> stores, String path, boolean append) {
-        try (FileWriter writer = new FileWriter(path, append)) {
-            for (Store store1 : stores) {
-                for (Store store2 : stores) {
-                    if (!store1.equals(store2)) {
-                        recursionCombination(0, new ArrayList<>(), store1, store2, writer);
-                    }
+    public void findAndSaveAllTransfers(List<Store> stores, String path) {
+        try (FileWriter writer = new FileWriter(path, false)) {
+            stores.sort(Comparator.comparing(Store::avgCost));
+            for (int i = 0; i < stores.size(); ++i) {
+                for (int j = i + 1; j < stores.size(); ++j) {
+                    recursionCombination(new ArrayList<>(), stores.get(i), stores.get(j), writer);
                 }
             }
         }catch (FileNotFoundException e){
@@ -50,19 +37,31 @@ public class FindProductTransfer {
         return s.toString();
     }
 
-    private void recursionCombination(int count, List<Product> visited, Store store1, Store store2, FileWriter writer) throws IOException {
-        List<Product> toTransfer  = findListToMove(store1, store2, visited);
+    private BigDecimal countAvg(List<Product> products){
+        if(products.isEmpty()){
+            return BigDecimal.ZERO;
+        }
+        BigDecimal sum = BigDecimal.ZERO;
+        for(Product product : products){
+            sum = sum.add(product.getCost());
+        }
+        return sum.divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
+    }
+
+       private void recursionCombination(List<Product> movedProducts, Store store1, Store store2, FileWriter writer) throws IOException {
+        List<Product> toTransfer  = store1.getProducts().values().stream().sorted(Comparator.comparing(Product::getCost)).collect(Collectors.toList());
         for (int i = 0; i < toTransfer.size(); i++) {
-            if (visited.contains(toTransfer.get(i))) break;
-            List<Product> visited1 = new ArrayList<>(visited);
-            visited1.add(toTransfer.get(i));
-            String s = formatTransfer(store1, store2, visited1);
-            writer.write(s);
-            if (count < toTransfer.size() - 1) {
-                recursionCombination(count+1, visited1, store1, store2, writer);
+            if (movedProducts.contains(toTransfer.get(i))) break;
+            List<Product> tryToMove = new ArrayList<>(movedProducts);
+            tryToMove.add(toTransfer.get(i));
+            if(countAvg(tryToMove).compareTo(store1.avgCost()) >= 0 && countAvg(tryToMove).compareTo(store2.avgCost()) <= 0) {
+                if(store1.avgCost().compareTo(store1.avgCostWithout(tryToMove)) > 0 && store2.avgCost().compareTo(store2.avgCostWith(tryToMove)) > 0) {
+                    writer.write(formatTransfer(store1, store2, tryToMove));
+                }
+            }
+            if (!toTransfer.isEmpty()) {
+                recursionCombination(tryToMove, store1, store2, writer);
             }
         }
     }
-
-
 }

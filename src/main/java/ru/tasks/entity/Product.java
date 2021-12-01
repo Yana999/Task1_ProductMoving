@@ -27,19 +27,22 @@ public final class Product {
             throw new InputValueException("product's name", name);
         }
 
-        if (weight.contains(",")) {
-            weight = weight.replace(",", ".");
+        weight = weight.replace(",", ".");
+        try {
+            convertedWeight = Double.parseDouble(weight);
+        }catch (NumberFormatException e){
+            throw new InputValueException("weight", weight);
         }
-
-        convertedWeight = Double.parseDouble(weight);
         if(convertedWeight < 0 || ((convertedWeight * 1000 % 1 > 0))) {
             throw new InputValueException("weight", weight);
         }
 
-        if(cost.contains(",")) {
-            cost = cost.replace(",", ".");
+        cost = cost.replace(",", ".");
+        try {
+            convertedCost = new BigDecimal(cost);
+        }catch (NumberFormatException e){
+            throw new InputValueException("cost", cost);
         }
-        convertedCost = new BigDecimal(cost);
         if(convertedCost.compareTo(BigDecimal.ZERO) < 0 || convertedCost.ulp().compareTo(new BigDecimal("0.01")) < 0) {
             throw new InputValueException( "cost", cost);
         }

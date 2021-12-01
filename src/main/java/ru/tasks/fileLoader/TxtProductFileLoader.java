@@ -9,7 +9,7 @@ import java.util.*;
 
 public class TxtProductFileLoader implements ProductFileLoader {
 
-    public Optional<Map<String,Store>> readProductList(String path) throws RuntimeException{
+    public Optional<Map<String,Store>> readProductList(String path){
         HashMap<String, Store> stores = new LinkedHashMap<>();
         long lineNumber = 0;
 
@@ -17,24 +17,23 @@ public class TxtProductFileLoader implements ProductFileLoader {
             while (fileReader.ready()) {
                 ++lineNumber;
                 String line = fileReader.readLine();
-                if(!line.isEmpty()){
-                    String[] splitLine = line.split(";");
-                    if(splitLine.length == 4) {
-                        try {
-                            String storeName = splitLine[3].trim();
-                            stores.putIfAbsent(storeName, Store.parseStore(storeName));
-                            Product newProduct = Product.parseProduct(splitLine[0], splitLine[1], splitLine[2]);
-                            Product duplicate = stores.get(storeName).addProduct(newProduct);
-                            if (duplicate != null) {
-                                System.out.printf("Found the duplicate %1$s of product %2$s in line %3$d. Duplicate was not saved %n", newProduct, duplicate, lineNumber);
-                            }
-                        } catch (InputValueException e) {
-                            System.out.println(e.getMessage() + " in line " + lineNumber);
+                String[] splitLine = line.split(";");
+                if(splitLine.length == 4) {
+                    try {
+                        String storeName = splitLine[3].trim();
+                        stores.putIfAbsent(storeName, Store.parseStore(storeName));
+                        Product newProduct = Product.parseProduct(splitLine[0], splitLine[1], splitLine[2]);
+                        Product duplicate = stores.get(storeName).addProduct(newProduct);
+                        if (duplicate != null) {
+                            System.out.printf("Found the duplicate %1$s of product %2$s in line %3$d. Duplicate was not saved %n", newProduct, duplicate, lineNumber);
                         }
-                    }else{
-                        System.out.println("Impossible to read product in wrong format");
+                    } catch (InputValueException e) {
+                        System.out.println(e.getMessage() + " in line " + lineNumber);
                     }
                 }else{
+                    System.out.println("Impossible to read product in wrong format");
+                }
+                if(line.isEmpty()){
                     System.out.println("Faced an empty line number " + lineNumber);
                 }
             }
@@ -43,6 +42,8 @@ public class TxtProductFileLoader implements ProductFileLoader {
             return Optional.empty();
         }catch (IOException e){
             System.out.println("Something went wrong");
+            System.out.println(e.getMessage());
+            return Optional.empty();
         }
         return Optional.of(stores);
     }

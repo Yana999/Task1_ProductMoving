@@ -13,7 +13,7 @@ public class ProductMoving {
             if(stores.isPresent()) {
                 stores.get().values().forEach(v -> System.out.println(v.info()));
                 FindProductTransfer movement = new FindProductTransfer();
-                movement.findAndSaveAllTransfers(new ArrayList<>(stores.get().values()), args[1], false);
+                movement.findAndSaveAllTransfers(new ArrayList<>(stores.get().values()), args[1]);
             }
         }else {
             System.out.println("Please, check input and output paths");

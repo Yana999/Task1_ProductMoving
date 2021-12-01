@@ -6,11 +6,11 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.*;
 
-public class Store {
+public final class Store{
     private final String name;
     private final HashMap <String, Product> products;
 
-    public Store(String name) throws IllegalArgumentException{
+    public Store(String name){
         this.name = name;
         this.products = new LinkedHashMap<>();
     }
