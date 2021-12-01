@@ -48,23 +48,6 @@ public class FindProductTransfer {
         return sum.divide(new BigDecimal(products.size()), 2, RoundingMode.HALF_UP);
     }
 
-//         private void recursionCombination(List<Product> movedProducts, Store store1, Store store2, FileWriter writer) throws IOException {
-//            List<Product> toTransfer  = store1.getProducts().values().stream().sorted(Comparator.comparing(Product::getCost)).collect(Collectors.toList());
-//            for (int i = 0; i < toTransfer.size(); i++) {
-//                if (movedProducts.contains(toTransfer.get(i))) break;
-//                List<Product> tryToMove = new ArrayList<>(movedProducts);
-//                tryToMove.add(toTransfer.get(i));
-//                if(countAvg(tryToMove).compareTo(store1.avgCost()) >= 0 && countAvg(tryToMove).compareTo(store2.avgCost()) <= 0) {
-//                    if(store1.avgCost().compareTo(store1.avgCostWithout(tryToMove)) > 0 && store2.avgCost().compareTo(store2.avgCostWith(tryToMove)) > 0) {
-//                        writer.write(formatTransfer(store1, store2, tryToMove));
-//                    }
-//                }
-//                if (!toTransfer.isEmpty()) {
-//                    recursionCombination(tryToMove, store1, store2, writer);
-//                }
-//            }
-//        }
-
     private void recursionCombination(List<Product> movedProducts, Store store1, Store store2, FileWriter writer) throws IOException {
         List<Product> toTransfer  = store1.getProducts().values().stream().sorted(Comparator.comparing(Product::getCost).reversed()).collect(Collectors.toList());
         for (int i = 0; i < toTransfer.size(); i++) {
