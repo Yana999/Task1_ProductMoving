@@ -31,7 +31,7 @@ public class TxtProductFileLoader implements ProductFileLoader {
                         System.out.println(e.getMessage() + " in line " + lineNumber);
                     }
                 }else{
-                    System.out.println("Impossible to read product in wrong format");
+                    System.out.println("Impossible to read product in wrong format in line " + lineNumber);
                 }
                 if(line.isEmpty()){
                     System.out.println("Faced an empty line number " + lineNumber);

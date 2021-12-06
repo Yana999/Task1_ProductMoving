@@ -1,0 +1,1675 @@
+Store3 -> Store1 : (30.00; 57.78) -> (0 55.00)
+Product13            1,000   30,00
+
+Store3 -> Store2 : (30.00; 96.67) -> (0 80.00)
+Product13            1,000   30,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.75 95.00)
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.14 96.00)
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 92.50)
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.57 94.00)
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 92.00)
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (41.67 93.33)
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.25 90.00)
+Product8             1,000   70,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 92.00)
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.43 90.00)
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 91.67)
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.86 88.00)
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 90.00)
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 88.33)
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (36.00 90.00)
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 87.50)
+Product7             1,000   60,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.43 90.00)
+Product7             1,000   60,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.86 88.00)
+Product7             1,000   60,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 90.00)
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.29 86.00)
+Product7             1,000   60,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 88.33)
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.33 86.67)
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (38.00 88.57)
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.71 84.00)
+Product7             1,000   60,00
+Product8             1,000   70,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.33 86.67)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 85.00)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 87.14)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.00 85.71)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (44.00 84.29)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (30.00 86.25)
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.86 88.00)
+Product6             1,000   50,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.29 86.00)
+Product6             1,000   50,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 88.33)
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.71 84.00)
+Product6             1,000   50,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.33 86.67)
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 85.00)
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 87.14)
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.14 82.00)
+Product6             1,000   50,00
+Product8             1,000   70,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 85.00)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.00 85.71)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (44.00 84.29)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.00 82.86)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (32.50 85.00)
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (44.00 84.29)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.00 82.86)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (35.00 83.75)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (37.50 82.50)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 81.25)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.50 80.00)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (23.33 82.22)
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.29 86.00)
+Product5             1,000   40,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.71 84.00)
+Product5             1,000   40,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.33 86.67)
+Product5             1,000   40,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.14 82.00)
+Product5             1,000   40,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 85.00)
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.00 85.71)
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (44.00 84.29)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.00 82.86)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (35.00 83.75)
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.00 82.86)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (37.50 82.50)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 81.25)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.50 80.00)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (26.67 81.11)
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 81.25)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.50 80.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (30.00 80.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (33.33 78.89)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (36.67 77.78)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 76.67)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 75.56)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (15.00 78.00)
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.14 82.00)
+Product2             1,000   20,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (51.67 83.33)
+Product2             1,000   20,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product2             1,000   20,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product2             1,000   20,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.00 82.86)
+Product2             1,000   20,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 81.25)
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.50 80.00)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (33.33 78.89)
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (36.67 77.78)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 76.67)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 75.56)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 74.44)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (25.00 76.00)
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 76.67)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 75.56)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 74.44)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (30.00 75.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 74.44)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (35.00 74.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 73.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 72.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 71.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 70.00)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (10.00 72.73)
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 81.67)
+Product1             1,000   10,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 80.00)
+Product1             1,000   10,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product1             1,000   10,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (48.00 81.43)
+Product1             1,000   10,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 78.33)
+Product1             1,000   10,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 80.00)
+Product1             1,000   10,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product1             1,000   10,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product1             1,000   10,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (42.50 80.00)
+Product1             1,000   10,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.00 78.57)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 78.75)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (36.67 77.78)
+Product1             1,000   10,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (54.00 77.14)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (47.50 77.50)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 76.67)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 75.56)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 74.44)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (30.00 75.00)
+Product1             1,000   10,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.00 75.71)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 76.25)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (52.50 75.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (43.33 75.56)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (46.67 74.44)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (35.00 74.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 73.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 72.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 71.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 70.00)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (20.00 71.82)
+Product1             1,000   10,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 73.75)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (57.50 72.50)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 73.33)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (53.33 72.22)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (45.00 72.00)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (56.67 71.11)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 71.00)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 70.00)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (40.00 70.00)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (55.00 70.00)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (50.00 69.09)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
+Store1 -> Store2 : (57.78; 96.67) -> (0 67.50)
+Product1             1,000   10,00
+Product2             1,000   20,00
+Product5             1,000   40,00
+Product6             1,000   50,00
+Product7             1,000   60,00
+Product8             1,000   70,00
+Product9             1,000   80,00
+Product10            1,000   90,00
+Product11            1,000  100,00
+
